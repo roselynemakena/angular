@@ -22,15 +22,11 @@
   </div>
 </nav>
 
-<div class="container" ng-app="myapp" ng-init="username='rose'" ng-controller="homeCtrl">
-	<p>Name: <input type="text" ng-model="username"></p>
+<div class="container" ng-app="myapp" ng-init="" ng-controller="homeCtrl">
 
-	<h1 ng-model="color" style="color: {{color}}">{{username}}</h1>
-	<hr>
-
-
-	<p>Expressions in angular:</p>
-	<h3>10+ 10 = {{10+10}}</h3>
+<ul>
+	<li ng-repeat="x in cars">{{x}}</li>
+</ul>
 
 	
 </div>
