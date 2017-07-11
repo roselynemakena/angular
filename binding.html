@@ -25,7 +25,7 @@
 <div class="container" ng-app="myapp" ng-init="" ng-controller="homeCtrl">
 
 <ul>
-	<li ng-repeat="x in cars">{{x}}</li>
+	<button style="margin-left: 20px;" class="btn btn-xs btn-primary" ng-repeat="x in cars">{{x}}</button>
 </ul>
 
 	
@@ -35,6 +35,7 @@
 	var app = angular.module('myapp',[]);
 	app.controller("homeCtrl", function($scope){
 		$scope.color = 'blueviolet';
+    $scope.cars=['Audi','BMW','Ford-Werke GmbH','Mercedes-Benz','Opel','Porsche','Volkswagen'];
 
 	})
 </script>
