@@ -33,6 +33,12 @@
 
   <h4>Filters: Sorting a directive</h4>
 <hr>	
+<h6>Filters - Cars</h6>
+
+  <button style="margin-left: 20px;" class="btn btn-xs btn-primary" ng-repeat="x in cars | filter: 'Opel'">{{x }}</button>
+
+  
+  <hr>
 </div>
 
 <script type="text/javascript">
@@ -40,6 +46,8 @@
 	app.controller("homeCtrl", function($scope){
 		$scope.firstname = 'James';
     $scope.lastname = 'Bond';
+    $scope.cars=['Audi','BMW','Ford-Werke GmbH','Mercedes-Benz','Opel','Porsche','Volkswagen'];
+
 
 
 	})
